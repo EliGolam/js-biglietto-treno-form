@@ -15,3 +15,8 @@
 #### v0.0.2: Created HTML base structure
 
 * Created base HTML structure
+
+#### v0.0.3: Initializing user input in JS
+
+* Created simple form in HTML
+* Initialized input const in JavaScript
