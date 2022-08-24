@@ -12,3 +12,6 @@
 * Added CSS reset
 * Added JS Script file
 
+#### v0.0.2: Created HTML base structure
+
+* Created base HTML structure
