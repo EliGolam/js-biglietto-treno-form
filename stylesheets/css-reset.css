@@ -1,0 +1,67 @@
+/* CSS Reset style edited from Andy Bell's CSS reset: https://piccalil.li/blog/a-modern-css-reset/ */
+
+/* BOX-SIZING rules and removing default margin and padding */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* SET DEFAULTS */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+}
+
+/* ELEMENT DEFAULTS */
+/* Remove list styles on ul and ol that have a class */
+ul[class], 
+ol[class] {
+    list-style: none;
+    list-style-type: none;
+} 
+
+a[class],
+a[id] {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* IMG and Picture Defaults */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Inherit fonts for input and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    /* Remove animations */
+    *,
+    *::after,
+    *::before {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}

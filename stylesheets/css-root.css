@@ -1,0 +1,49 @@
+/* Root pseudoclass custom properties: https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties */
+/* These are some generic design choices for colour schemes, fonts, gutters and gaps */
+
+:root {
+    /* COLOR SCHEME */
+    --clr-primary: #141922;
+    --clr-secondary: #080B12;
+    --clr-secondary-transparent: #080b1262;
+
+    --clr-black: #000000;
+    --clr-dark-grey: #282828;
+    --clr-grey: #808080;
+    --clr-light-grey: #D2D2D2;
+    --clr-white: #FDFDFD;
+
+    /* FONT */
+    /* font: font-style font-variant font-weight font-size/line-height font-family; */
+    --fontfamily-default: 'Montserrat', Helvetica, Arial, sans-serif;
+
+    --fs-1: 5rem;
+    --fs-2: 4rem;
+    --fs-3: 3rem;
+    --fs-4: 2rem;
+    --fs-5: 1rem;
+    --fs-6: .6rem;
+
+    --fw-black: 900;
+    --fw-bold: 600;
+    --fw-regular: 400;
+    --fw-light: 200;
+    --fw-thin: 100;
+
+    /* SPACING */
+    --flow-spacing: 1em;
+
+    --row-gap: 1rem;
+    --column-gap: 1.5rem;
+
+    --gap: 3rem;
+    --small-gap: 1rem;
+    
+    --content-width: 100%; 
+
+    --sm-breakpoint: 576px;
+    --md-breakpoint: 768px;
+    --lg-breakpoint: 992px;
+    --xl-breakpoint: 1200px;
+    --xxl-breakpoint: 1400px;
+}
