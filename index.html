@@ -32,74 +32,98 @@
 
 <!-- BODY -->
 <body>
-    <header>
-        <h1>Boolean Tickets</h1>
+    <header class="title-header">
+        <img class="title-logo" src="./assets/Logo.png" alt="Boolean Logo">
+        <h1 class="title">Boolean Tickets</h1>
     </header>
 
     <main>
-        <!--#region: [SECTION] client-info -->
-        <section id="client-info" class="client-info">
-            <h2>Calculate Ticket Price</h2>
-            <div id="error-form"></div>
+        <div class="container flex">
+            <!--#region: [SECTION] client-info -->
+            <section id="client-info" class="client-info container-section">
+                <h2>Calculate Ticket Price</h2>
 
-            <form id="ticket-form" action="#" method="get">
-                <div>
-                    <label for="username">Full Name</label>
-                    <input type="text" id="username" name="username" placeholder="Name & Last Name" required>
+                <!--#region: section-card -->
+                <div class="section-card">
+                    <form id="ticket-form" action="#" method="get">
+                        <div>
+                            <label for="username">Full Name</label>
+                            <input type="text" id="username" name="username" placeholder="Name & Last Name" required>
+                        </div>
+    
+                        <div>
+                            <label for="travel-distance">Travel Distance (KM)</label>
+                            <input type="number" id="travel-distance" name="travel-distance" value="10" min="1" required>
+                        </div>
+    
+                        <div>
+                            <label for="age-range">Age Range</label>
+                            <select name="age-range" id="age-range">
+                                <option value="Adult">Adult</option>
+                                <option value="Minor">Minor (less then 18)</option>
+                                <option value="Elderly">Elderly (65+)</option>
+                            </select>
+                        </div>
+    
+                        <div>
+                            <label for="travel-date">Travel Date</label>
+                            <input type="date" name="travel-date" id="travel-date" min="2022-08-25" value="2022-08-25" required>
+                        </div>
+    
+                        <button type="submit">Add Ticket</button>
+                        <button type="reset">Reset</button>
+                    </form>
+                    <!--#endregion: section-card -->
                 </div>
+            </section>
+            <!--#endregion: [FORM] client-info -->
 
-                <div>
-                    <label for="travel-distance">Travel Distance (KM)</label>
-                    <input type="number" id="travel-distance" name="travel-distance" value="10" min="1" step="10" required>
-                </div>
+            <!--#region: [SECTION] ticket-information -->
+            <section id="ticket-info" class="ticket-info container-section">
+                <h2>Tickets</h2>
+                <article>
+                    <h3>Passenger Details</h3>
+                    <div>
+                        <div>
+                            <h4>Passenger Name</h4>
+                            <p>UserName</p>
+                        </div>
+                        
+                        <div>
+                            <p>Ticket Type</p>
+                            <p>Standard</p>
+                        </div>
 
-                <div>
-                    <label for="age-range">Age Range</label>
-                    <select name="age-range" id="age-range">
-                        <option value="Adult">Adult</option>
-                        <option value="Minor">Minor (less then 18)</option>
-                        <option value="Elderly">Elderly (65+)</option>
-                    </select>
-                </div>
+                        <div>
+                            <p>Ticket Type</p>
+                            <p>Standard</p>
+                        </div>
 
-                <div>
-                    <label for="travel-date">Travel Date</label>
-                    <input type="date" name="travel-date" id="travel-date" min="2022-08-25">
-                </div>
+                        <div>
+                            <p>Ticket Type</p>
+                            <p>Standard</p>
+                        </div>
 
-                <button type="submit">Add Ticket</button>
-                <button type="reset">Reset</button>
-            </form>
-
-        </section>
-            <!-- H2: Calculate Ticket Price -->
-            <!-- Form with inputs -->
-                <!-- Name/Last Name -->
-                <!-- Distance -->
-                <!-- Age dropdown -->
-                <!-- Add Ticket button -->
-                <!-- Reset button -->
-        <!--#endregion: [FORM] client-info -->
-
-        <!--#region: [SECTION] ticket-information -->
-        <section id="client-info" class="client-info">
-            <h2>Tickets</h2>
-            <article>
-                <h3>Passenger Details</h3>
-            </article>
-        </section>
-            <!-- H2 -->
-            <!-- H3 per ticket -->
-            <!-- flex -->
-                <!-- H4: Passenger Name -->
-                <!-- 4 sections -->
-                    <!-- h5 * 4 in articles -->
-                        <!-- Ticket type -->
-                        <!-- random number for carriage -->
-                        <!-- random code -->
-                        <!-- price -->
-            <!-- Proceed to Payment -->
-        <!--#endregion: [SECTION] ticket-information -->
+                        <div>
+                            <p>Ticket Type</p>
+                            <p>Standard</p>
+                        </div>
+                    </div>
+                </article>
+            </section>
+                <!-- H2 -->
+                <!-- H3 per ticket -->
+                <!-- flex -->
+                    <!-- H4: Passenger Name -->
+                    <!-- 4 sections -->
+                        <!-- h5 * 4 in articles -->
+                            <!-- Ticket type -->
+                            <!-- random number for carriage -->
+                            <!-- random code -->
+                            <!-- price -->
+                <!-- Proceed to Payment -->
+            <!--#endregion: [SECTION] ticket-information -->
+        </div>  
     </main>
 </body>
 

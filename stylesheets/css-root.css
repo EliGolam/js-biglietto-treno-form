@@ -47,3 +47,7 @@
     --xl-breakpoint: 1200px;
     --xxl-breakpoint: 1400px;
 }
+
+body {
+    font-family: var(--fontfamily-default);
+}

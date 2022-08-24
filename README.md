@@ -20,3 +20,7 @@
 
 * Created simple form in HTML
 * Initialized input const in JavaScript
+
+#### v0.0.4: Completed HTML Client-info section
+
+* Completed HTML client-info section
