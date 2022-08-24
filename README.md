@@ -1,6 +1,6 @@
 # Exercise Boolean: Ticket Price Calculator
 
-*JavaScript Practice*
+JavaScript Practice
 
 ## Versions
 
@@ -24,3 +24,5 @@
 #### v0.0.4: Completed HTML Client-info section
 
 * Completed HTML client-info section
+
+### v0.1: Begin styling CSS

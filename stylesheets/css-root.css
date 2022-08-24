@@ -33,13 +33,11 @@
     /* SPACING */
     --flow-spacing: 1em;
 
-    --row-gap: 1rem;
-    --column-gap: 1.5rem;
+    --gap-1: 1rem;
+    --gap-2: 1.5rem;
+    --gap-3: 3rem;
 
-    --gap: 3rem;
-    --small-gap: 1rem;
-    
-    --content-width: 100%; 
+    --content-width: 900px; 
 
     --sm-breakpoint: 576px;
     --md-breakpoint: 768px;
