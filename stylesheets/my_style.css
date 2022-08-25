@@ -97,6 +97,14 @@
     justify-content: space-evenly;
 }
 
+.ticket-card {
+    display: none;
+}
+
+.ticket-card.active {
+    display: flex;
+}
+
 .ticket-details {
     width: 70%;
     padding: var(--gap-1) 0;

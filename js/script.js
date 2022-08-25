@@ -64,4 +64,8 @@ form.addEventListener('submit',function(e) {
     }
 
     ticketCost.innerHTML = Intl.NumberFormat(current_lang, { style: 'currency', currency: 'EUR' }).format(totalCost);
+
+    // Show Ticket
+    const ticket = document.querySelector('.ticket-card');
+    ticket.classList.add('active');
 })

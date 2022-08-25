@@ -31,3 +31,7 @@ JavaScript Practice
 
 * Added functional JavaScript
 * Added basic output formatting
+
+#### v0.2.1: Fixed JavaScript bug
+
+* Fixed JS bug where ticket wouldn't show up
