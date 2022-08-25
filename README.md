@@ -39,3 +39,7 @@ JavaScript Practice
 ### v0.9: Created functioning page
 
 * Missing ability to duplicate nodes (multiple tickets)
+
+### v0.9.1: Created second version of index with bootstrap
+
+* Using bootstrap to build an branched index
