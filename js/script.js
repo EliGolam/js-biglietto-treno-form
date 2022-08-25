@@ -2,6 +2,7 @@
 console.log('script.js LOADED');
 
 const tickets = document.getElementById('ticket-info');
+const current_lang = 'it-IT'
 
 // Initialize user input form
 const form = document.forms['ticket-form'];
@@ -25,19 +26,42 @@ form.addEventListener('submit',function(e) {
         `
     )
 
-    // Create Elements
-    const p = document.createElement("p");
-    const div = document.createElement('div');
+    // Initialize ticket details
+    const ticketUsername = document.querySelector('.ticket-username');
+    const ticketType = document.querySelector('.ticket-type');
+    const ticketSeat = document.querySelector('.ticket-seat');
+    const ticketCode = document.querySelector('.ticket-code');
+    const ticketCost = document.querySelector('.ticket-cost');
 
-    // Add content
-    p.textContent = `
-        Username: ${username}
-        Travel Distance: ${travelDistance}
-        Age Range: ${ageRange}
-        Travel Date: ${travelDate}
-    `;
+    ticketUsername.innerHTML = username;
+    
+    switch (ageRange) {
+        case 'Adult': {
+            ticketType.innerHTML = 'Standard';
+            break;
+        }
 
-    // Append to document
-    div.appendChild(p);
-    tickets.appendChild(div);
+        case 'Minor': {
+            ticketType.innerHTML = 'Concession Minor';
+            break
+        }
+
+        case 'Elderly': {
+            ticketType.innerHTML = 'Concession Senior (65+)';
+            break
+        }
+    }
+
+    ticketSeat.innerHTML = Math.ceil(Math.random()*20) + '-' + Math.ceil(Math.random()*40);
+    ticketCode.innerHTML = Math.floor(Math.random()*100000).toString().padStart(5, '0');
+
+    let totalCost = travelDistance * 0.21;
+    if (ageRange === 'Minor') {
+        totalCost *= 0.8;
+    }
+    else if (ageRange === 'Elderly') {
+        totalCost *= 0.6;
+    }
+
+    ticketCost.innerHTML = Intl.NumberFormat(current_lang, { style: 'currency', currency: 'EUR' }).format(totalCost);
 })

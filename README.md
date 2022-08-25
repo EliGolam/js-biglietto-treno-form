@@ -26,3 +26,8 @@ JavaScript Practice
 * Completed HTML client-info section
 
 ### v0.1: Begin styling CSS
+
+### v0.2: Added functional JavaScript
+
+* Added functional JavaScript
+* Added basic output formatting

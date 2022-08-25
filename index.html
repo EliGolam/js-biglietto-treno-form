@@ -56,7 +56,7 @@
                             <input type="number" id="travel-distance" name="travel-distance" value="10" min="1" required>
                         </div>
     
-                        <div class="ticket-form_item flex f-col">
+                        <div class="ticket-form_item flex f-col f-space-between">
                             <label for="age-range">Age Range</label>
                             <select name="age-range" id="age-range">
                                 <option value="Adult">Adult</option>
@@ -88,29 +88,31 @@
                 <div class="section-card">
                     <h3>Ticket Details</h3>
                     <article class="ticket-card flex w-100">
-                        <div class="ticket-passenger">
+                        <div class="ticket-passenger flex f-col">
                             <h4>Passenger Name</h4>
-                            <p>UserName</p>
+                            <p class="ticket-username">UserName</p>
                         </div>
                         
-                        <div class="ticket-type ticket-details">
-                            <p>Ticket Type</p>
-                            <p>Standard</p>
-                        </div>
-
-                        <div class="ticket-seat ticket-details">
-                            <p>Seat</p>
-                            <p>0-00</p>
-                        </div>
-
-                        <div class="ticket-code ticket-details">
-                            <p>CP Code</p>
-                            <p>XXXXX</p>
-                        </div>
-
-                        <div class="ticket-cost ticket-details">
-                            <p>Ticket Cost</p>
-                            <p></p>
+                        <div class="flex ticket-details">
+                            <div class="ticket-details_item">
+                                <p>Ticket Type</p>
+                                <p class="ticket-type">Standard</p>
+                            </div>
+    
+                            <div class="ticket-details_item">
+                                <p>Seat</p>
+                                <p class="ticket-seat">0-00</p>
+                            </div>
+    
+                            <div class="ticket-details_item">
+                                <p>CP Code</p>
+                                <p class="ticket-code">XXXXX</p>
+                            </div>
+    
+                            <div class="ticket-details_item">
+                                <p>Ticket Cost</p>
+                                <p class="ticket-cost"></p>
+                            </div>
                         </div>
                     </article>
                 </div>
