@@ -5,7 +5,7 @@ const tickets = document.getElementById('ticket-info');
 const current_lang = 'it-IT'
 
 // Initialize user input form
-const form = document.forms['ticket-form'];
+const form = document.getElementById('ticket-form');
 
 form.addEventListener('submit',function(e) {
     // Prevent page from refreshing
@@ -52,7 +52,7 @@ form.addEventListener('submit',function(e) {
         }
     }
 
-    ticketSeat.innerHTML = Math.ceil(Math.random()*20) + '-' + Math.ceil(Math.random()*40);
+    ticketSeat.innerHTML = Math.ceil(Math.random()*20).toString().padStart(2, '0') + '-' + Math.ceil(Math.random()*40).toString().padStart(2, '0');
     ticketCode.innerHTML = Math.floor(Math.random()*100000).toString().padStart(5, '0');
 
     let totalCost = travelDistance * 0.21;

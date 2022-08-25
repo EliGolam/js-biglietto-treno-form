@@ -35,3 +35,7 @@ JavaScript Practice
 #### v0.2.1: Fixed JavaScript bug
 
 * Fixed JS bug where ticket wouldn't show up
+
+### v0.9: Created functioning page
+
+* Missing ability to duplicate nodes (multiple tickets)

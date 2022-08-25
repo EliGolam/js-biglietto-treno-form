@@ -2,66 +2,17 @@
 /*#region : UTILITIES */
 /* ******************************** */
 /*#region : ARIA */
-.visually-hidden {
-    position: absolute;
-    position: absolute !important;
-    width: 1px !important;
-    height: 1px !important;
-    padding: 0 !important;
-    margin: -1px !important;
-    overflow: hidden !important;
-    clip: rect(0,0,0,0) !important;
-    white-space: nowrap !important;
-    border: 0 !important;
-}
+
 /*#endregion : ARIA */
 
 /* ******************************** */
 /*#region: content sizes */
-.container {
-    max-width: var(--content-width);
-    margin: 0 auto;
-}
 
-.container-section {
-    margin-top: var(--gap-2);
-    text-align: center;
-}
-
-.section-card {
-    padding: var(--gap-3);
-    background-color: var(--clr-white);
-
-    border-radius: 10px;
-}
-
-.w-100 {
-    width: 100%;
-}
 /*#endregion: content sizes */
 
 /* ******************************** */
 /*#region: FLEX */
-.flex {
-    display: flex;
-    row-gap: var(--gap-1);
-}
 
-.f-col {
-    flex-direction: column;
-}
-
-.f-wrap {
-    flex-wrap: wrap;
-}
-
-.f-space-around {
-    justify-content: space-around;
-}
-
-.f-space-between {
-    justify-content: space-between;
-}
 /*#endregion: FLEX */
 
 
@@ -72,9 +23,7 @@
 
 /* *************************************************************************** */
 /*#region : Global elements layout and defaults */
-.title-header {
-    text-align: center;
-}
+
 /*end#region : Global elements layout and defaults */
 /* *************************************************************************** */
 
@@ -83,10 +32,7 @@
 /*#region : BLOCKS */
 /* ******************************** */
 /*#region: title-header */
-.title-logo {
-    margin: 3rem auto 1rem auto;
-    width: 10%;
-}
+
 /*#endregion: title-header */
 
 /* ******************************** */
@@ -96,31 +42,7 @@
 
 /* ******************************** */
 /*#region: ticket-info */
-.ticket-passenger {
-    flex-grow: 1;
-    justify-content: space-evenly;
-}
 
-.ticket-card {
-    display: none;
-}
-
-.ticket-card.active {
-    display: flex;
-}
-
-.ticket-details {
-    width: 70%;
-    padding: var(--gap-1) 0;
-}
-
-.ticket-details_item {
-    width: calc(100% / 4);
-}
-
-.ticket-details_item > *:first-child {
-    margin-bottom: var(--gap-2);
-}
 /*#endregion: ticket-info */
 
 /*#endregion : BLOCKS */

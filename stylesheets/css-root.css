@@ -3,7 +3,7 @@
 
 :root {
     /* COLOR SCHEME */
-    --clr-primary: #141922;
+    --clr-primary: #b91450;
     --clr-secondary: #080B12;
     --clr-secondary-transparent: #080b1262;
 
@@ -48,4 +48,5 @@
 
 body {
     font-family: var(--fontfamily-default);
+    background-color: var(--clr-primary);
 }
